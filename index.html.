@@ -1,40 +1,51 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Feliz Cumpleaños</title>
 <style>
-  :root { --primary: #00ff41; --bg: #0a0a0a; --card-bg: #1a1a1a; --text: #ffffff; }
-  body { background-color: var(--bg); color: var(--text); font-family: 'Courier New', Courier, monospace; margin: 0; padding: 20px; display: flex; flex-direction: column; align-items: center; }
-  .header { text-align: center; margin-bottom: 30px; }
-  .header h1 { color: var(--primary); }
-  .code-window { background: var(--card-bg); border-radius: 8px; border: 1px solid #333; width: 95%; max-width: 600px; margin-bottom: 30px; overflow: hidden; }
-  .window-bar { background: #333; padding: 10px; display: flex; gap: 8px; }
-  .dot { width: 12px; height: 12px; border-radius: 50%; }
-  .red { background: #ff5f56; } .yellow { background: #ffbd2e; } .green { background: #27c93f; }
-  .code-content { padding: 20px; line-height: 1.6; font-size: 0.9rem; }
-  .comment { color: #6a9955; } .keyword { color: #569cd6; } .string { color: #ce9178; }
-  .photo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 15px; width: 95%; max-width: 800px; }
-  .photo-grid img { width: 100%; height: 150px; object-fit: cover; border-radius: 8px; border: 2px solid transparent; }
+  body {
+    background-color: #0a0a0a;
+    color: #ffffff;
+    font-family: 'Courier New', monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  .terminal {
+    background: #1a1a1a;
+    border: 1px solid #00ff41;
+    border-radius: 8px;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 0 15px rgba(0, 255, 65, 0.2);
+  }
+  h1 { color: #00ff41; font-size: 1.5rem; }
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+  }
+  .photo-grid img {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #333;
+  }
 </style>
 </head>
 <body>
-  <div class="header">
-    <h1>System.out.println("¡Feliz Cumple!");</h1>
-    <p>Cargando recuerdos... 100%</p>
-  </div>
-  <div class="code-window">
-    <div class="window-bar"><div class="dot red"></div><div class="dot yellow"></div><div class="dot green"></div></div>
-    <div class="code-content">
-      <span class="comment">// Escribe aquí tu mensaje</span><br>
-      <span class="keyword">const</span> mensaje = <span class="string">"Eres mi jugador favorito. ¡Te amo!"</span>;<br><br>
-      <span class="keyword">if</span> (cumpleaños) { console.log(mensaje); }
-    </div>
+  <h1>> ¡Feliz Cumpleaños! _</h1>
+  <div class="terminal">
+    <p style="color: #6a9955;">// Eres mi jugador favorito</p>
+    <p>if (amor == "infinito") {</p>
+    <p>&nbsp;&nbsp;console.log("¡Te amo muchísimo!");</p>
+    <p>}</p>
   </div>
   <div class="photo-grid">
-    <img src="foto1.jpg" alt="Foto 1">
-    <img src="foto2.jpg" alt="Foto 2">
+    <img src="foto1.jpg">
+    <img src="foto2.jpg">
   </div>
 </body>
 </html>
