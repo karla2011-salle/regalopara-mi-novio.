@@ -1,111 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feliz Cumpleaños</title>
 <style>
-  :root {
-    --primary: #00ff41; /* Verde Matrix/Programador */
-    --bg: #0a0a0a;
-    --card-bg: #1a1a1a;
-  }
-
-  body {
-    background-color: var(--bg);
-    color: white;
-    font-family: 'Courier New', Courier, monospace;
-    margin: 0;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .header {
-    text-align: center;
-    padding: 50px 0;
-  }
-
-  h1 { color: var(--primary); font-size: 2.5rem; }
-
-  /* Estilo de la carta como si fuera un editor de código */
-  .code-window {
-    background: var(--card-bg);
-    border-radius: 8px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-    width: 90%;
-    max-width: 600px;
-    overflow: hidden;
-    border: 1px solid #333;
-    margin-bottom: 30px;
-  }
-
-  .window-bar {
-    background: #333;
-    padding: 10px;
-    display: flex;
-    gap: 8px;
-  }
-
+  :root { --primary: #00ff41; --bg: #0a0a0a; --card-bg: #1a1a1a; --text: #ffffff; }
+  body { background-color: var(--bg); color: var(--text); font-family: 'Courier New', Courier, monospace; margin: 0; padding: 20px; display: flex; flex-direction: column; align-items: center; }
+  .header { text-align: center; margin-bottom: 30px; }
+  .header h1 { color: var(--primary); }
+  .code-window { background: var(--card-bg); border-radius: 8px; border: 1px solid #333; width: 95%; max-width: 600px; margin-bottom: 30px; overflow: hidden; }
+  .window-bar { background: #333; padding: 10px; display: flex; gap: 8px; }
   .dot { width: 12px; height: 12px; border-radius: 50%; }
-  .red { background: #ff5f56; }
-  .yellow { background: #ffbd2e; }
-  .green { background: #27c93f; }
-
-  .content { padding: 20px; line-height: 1.6; }
-  .comment { color: #6a9955; font-style: italic; }
-  .keyword { color: #569cd6; }
-  .string { color: #ce9178; }
-
-  /* Galería de fotos */
-  .photo-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 15px;
-    width: 90%;
-    max-width: 800px;
-  }
-
-  .photo-grid img {
-    width: 100%;
-    border-radius: 5px;
-    filter: grayscale(30%);
-    transition: 0.3s;
-    border: 2px solid transparent;
-  }
-
-  .photo-grid img:hover {
-    filter: grayscale(0%);
-    border-color: var(--primary);
-    transform: scale(1.05);
-  }
+  .red { background: #ff5f56; } .yellow { background: #ffbd2e; } .green { background: #27c93f; }
+  .code-content { padding: 20px; line-height: 1.6; font-size: 0.9rem; }
+  .comment { color: #6a9955; } .keyword { color: #569cd6; } .string { color: #ce9178; }
+  .photo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 15px; width: 95%; max-width: 800px; }
+  .photo-grid img { width: 100%; height: 150px; object-fit: cover; border-radius: 8px; border: 2px solid transparent; }
 </style>
 </head>
 <body>
-
   <div class="header">
     <h1>System.out.println("¡Feliz Cumple!");</h1>
-    <p>Cargando amor... 100% [██████████]</p>
+    <p>Cargando recuerdos... 100%</p>
   </div>
-
   <div class="code-window">
-    <div class="window-bar">
-      <div class="dot red"></div>
-      <div class="dot yellow"></div>
-      <div class="dot green"></div>
-    </div>
-    <div class="content">
-      <span class="comment">// Esta es una función especial para ti</span><br>
-      <span class="keyword">function</span> <span class="keyword">celebrarCumpleaños</span>(novio) {<br>
-      &nbsp;&nbsp;<span class="keyword">if</span> (novio == <span class="string">"El mejor del mundo"</span>) {<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;console.log(<span class="string">"Eres mi jugador favorito en Roblox y mi persona favorita en la vida. ¡Te amo!"</span>);<br>
-      &nbsp;&nbsp;}<br>
-      }
+    <div class="window-bar"><div class="dot red"></div><div class="dot yellow"></div><div class="dot green"></div></div>
+    <div class="code-content">
+      <span class="comment">// Escribe aquí tu mensaje</span><br>
+      <span class="keyword">const</span> mensaje = <span class="string">"Eres mi jugador favorito. ¡Te amo!"</span>;<br><br>
+      <span class="keyword">if</span> (cumpleaños) { console.log(mensaje); }
     </div>
   </div>
-
-  <h3>📸 Nuestros Momentos (Recuerdos.exe)</h3>
-<div class="photo-grid">
-  <img src="foto1.jpg" alt="Recuerdo 1">
-  <img src="foto2.jpg" alt="Recuerdo 2">
-</div>
+  <div class="photo-grid">
+    <img src="foto1.jpg" alt="Foto 1">
+    <img src="foto2.jpg" alt="Foto 2">
+  </div>
 </body>
 </html>
